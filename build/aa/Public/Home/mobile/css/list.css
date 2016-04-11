@@ -1,0 +1,25 @@
+body{padding-top:85px}
+.s-filter{position:fixed;z-index:3;top:45px;left:0;width:100%;height:40px;line-height:40px;background-color:rgba(0,0,0,.5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7f000000', endColorstr='#7f000000');overflow:hidden;-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s}
+.s-filter .content-wrap,.s-filter .header{background-color:#fff}
+:root .s-filter{filter:none\9}
+.s-filter.headroom--unpinned{-webkit-transform:translateY(-45px);-ms-transform:translateY(-45px);transform:translateY(-45px)}
+.s-filter.unfold{height:auto;bottom:-45px}
+.s-filter .header{display:-webkit-box;display:-moz-box;display:box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex}
+.s-filter .header .filter-title{-webkit-box-flex:1;box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;text-align:center;border-left:1px solid #e6e6e6}
+.s-filter .header .filter-title.active{color:#3399e0}
+.s-filter .header .filter-title .if{-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s}
+.s-filter .header .filter-title.unfold .if{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.s-filter .content-wrap ul{display:none}
+.s-filter .content-wrap li{line-height:1.4286;padding:10px 20px;border-top:1px solid #e6e6e6;position:relative}
+.s-filter .content-wrap li.active{background-color:#EFF0F4}
+.s-filter .content-wrap var{position:absolute;right:20px;padding:3px 6px;line-height:14px;border-radius:10px;color:#fff;font-size:12px;background-color:#d4d4d4}
+.ctrl-search{line-height:1.4286}
+.ctrl-search input{padding:3px 10px 3px 28px;color:#333}
+.ctrl-search .btn-search{color:#333;left:5px;top:4px}
+.btn-clear,.btn-search{position:absolute;top:5px;padding:5px;font-size:16px;line-height:1.4286}
+.btn-clear{right:8px}
+.s-footer{background-color:#fff}
+.s-footer:before{content:'';position:absolute;width:100%;height:1px;top:0;left:0;background-color:#e6e6e6;-webkit-transform:scaleY(.5);-ms-transform:scaleY(.5);transform:scaleY(.5)}
+.s-footer>div{text-align:center;-webkit-box-flex:1;box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1}
+.s-footer>div.active{color:#3399e0}
+.s-footer p{margin:0}

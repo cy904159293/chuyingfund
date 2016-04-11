@@ -1,0 +1,564 @@
+<!doctype html>
+<!--[if lte IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zh-CN"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>聚募网—聚募网 专注早期创业项目的众筹融资平台</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+
+    <meta name="keywords" content="众筹,聚募网,聚募众筹,股权众筹,天使轮,种子轮,天使投资,风险投资,众筹平台,创业融资,私募股权融资,私募股权投资平台,融资平台,孟杨,孟杨访谈,孟杨访谈录">
+    <meta name="description" content="聚募众筹是致力于帮助有梦想、有决心、有能力、够努力的早期创业者获得股权投资的互联网平台。打造融合众筹投资人和创业者学习、互助、交流的在线众创空间。梦想再小也要呵护，力量再小也要支持。">
+    <meta name="baidu-site-verification" content="j4d5H6qJuY" />
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+    <link rel="stylesheet" href="./Public/Home/mobile/css/base_m.css">
+    
+    <link rel="stylesheet" href="./Public/Home/mobile/css/list.css">
+    <script src="./Public/static/js/modernizr-2.8.3.min.js"></script>
+    <script>
+        var serverData = {
+            appid: "dreammove"
+        }, dm = {};
+        var api = {
+            ssoUcenter: 'http://user.undm.cn/user/sso?callback=?',
+            ssoLocal: '/sso/login.html',
+            ucLogin: "http://user.undm.cn/member/login?appid=dreammove&redirect_url=" + encodeURIComponent(location.href),
+            ucRegister: "http://user.undm.cn/member/register?appid=dreammove&redirect_url=" + encodeURIComponent(location.href),
+            ucLogout: 'http://user.undm.cn/user/user/logout?callback=?'
+        };
+        window.imgErr = function (img, filename) {
+            img.onerror = null;
+            img.src = './Public/Home/default/img/' + (filename == null ? 'default-img.jpg' : filename)
+        }
+        // fz = 320px/20=16px, max-width=640px
+        !function(){var a=document.documentElement;var b=a.clientWidth/20;a.style.fontSize=(b>32?32:b)+"px"}();
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?c18b08cac9b94bf4628c0277d3a4d7de";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body class="bg">
+
+<script>
+
+</script>
+
+
+<div class="s-header">
+    <div class="ellipsis flex-1">项目列表</div>
+    <button type="button" class="btn-search r-8">
+        <i class="if icon-magnifier m-0"></i>
+    </button>
+</div>
+<div class="view-search dn">
+    <div class="s-header flex">
+        <div class="w-2em tac btn-finish-search" data-href="/list/index.html">
+            <i class="if icon-angle-left m-0"></i>
+        </div>
+        <form action="" class="flex-1" native>
+            <div class="ctrl-wrap ctrl-search tar pt-5 pr-5 fz-base">
+                <input type="search" name="keyword" class="" placeholder="请输入关键字" value="">
+                <button type="button" class="btn-clear c-danger dn">&times;</button>
+                <button type="button" class="btn-search">
+                    <i class="if icon-magnifier m-0"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="s-filter bb">
+    <form action="/list/index.html" id="form-filter" native>
+        <input type="hidden" id='industry' name="industry" value="">
+        <input type="hidden" id='type' name="type" value="99">
+        <input type="hidden" id='city' name="city" value="">
+    </form>
+
+    <div class="header">
+        <div class="filter-title" data-name="industry"><var class="filter-name">分类</var><i
+                class="if icon-triangle-down"></i></div>
+        <div class="filter-title" data-name="type"><var class="filter-name">状态</var><i
+                class="if icon-triangle-down"></i></div>
+        <div class="filter-title" data-name="city"><var class="filter-name">地区</var><i
+                class="if icon-triangle-down"></i></div>
+    </div>
+    <div class="content-wrap">
+        <ul class="industry-list" data-name="industry">
+            <li class="active" data-value="0">全部</li><li class="" data-value="1">PC互联网</li><li class="" data-value="2">移动互联网</li><li class="" data-value="3">IT软件/硬件</li><li class="" data-value="4">服务业</li><li class="" data-value="5">文化创意</li><li class="" data-value="6">节能环保</li><li class="" data-value="7">新能源</li><li class="" data-value="8">生物医药</li><li class="" data-value="9">其他</li>        </ul>
+        <ul class="stage-list" data-name="type">
+            <li class="active" data-value="99">全部</li><li class="" data-value="5">预热项目</li><li class="" data-value="6">合投项目</li><li class="" data-value="8">完成项目</li>        </ul>
+        <ul class="city-list" data-name="city">
+            <li class="active" data-value="0">全部</li><li class="" data-value="175">杭州</li><li class="" data-value="9">上海</li><li class="" data-value="289">广州</li><li class="" data-value="291">深圳</li><li class="" data-value="1">北京</li>        </ul>
+    </div>
+    </div>
+
+<div class="s-proj-list">
+    <ul class="proj-list">
+        <li class="proj-item por">
+        <div class="pb-6 c-primary">
+        项目来源: 三生金服    </div>
+    <div class="poa t-0 r-0"><img src="./Public/Home/default/img/icon-shared-proj.png" alt="" width="30"></div>    <a href="/project/detail/id/GQ14544890510124354.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#4094f4">合投中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2016-01-18_569c6ce90d4b4.png" alt="点师成金" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>点师成金</h4>
+                <div class="sub-title">
+                    当企业家遇到转型等经营问题时，“点师成金”帮他们“一键”匹配咨询顾问，构建快速、精准、问得起、用得上的短时视频管理咨询平台：线上类Uber模式+线下公开课。我们的口号是：“让智慧咨询走近千万企业家”！                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">浙江省</i>
+                    <i class="if icon-tag">移动互联网</i>                </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:-12%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥100万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥5000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>88%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+            <a href="/project/detail/id/GQ14543075160016669.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#4094f4">合投中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2016-02-24_56cd3ef97bde9.jpg" alt="快制邦" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>快制邦</h4>
+                <div class="sub-title">
+                    通过移动互联网交易平台，实现制造业非标及标准件、设备等产品的交易。针对企业的采供需求，以移动端为导向，实现订单的实时跟踪，物流运输的精确定位，实现制造业“云工厂”模式。                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">江苏省</i>
+                                    </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:-16%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥200万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥10000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>84%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+            <a href="/project/detail/id/GQ14570663420014955.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#4094f4">合投中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2016-03-10_56e10647c3760.jpg" alt="威代环境科技" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>威代环境科技</h4>
+                <div class="sub-title">
+                    智能空气净化器以租代售，免押金，包滤网，助您0门槛对抗雾霾！                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">浙江省</i>
+                                    </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:0%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥150万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥8000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>101%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+            <a href="/project/detail/id/GQ14474001980012311.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#ed7258">预热中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2015-11-13_56458d4ccd8cf.jpg" alt="一咻" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>一咻</h4>
+                <div class="sub-title">
+                    塑造一款有趣儿的、能释放人心里压力并带有正能量的有粘性的APP。
+以用户在虚拟世界中最亲密的小伙伴为入口，引导用户参加线下身心健康的导师课程，另外影响带动用户参与一咻公益做自己力所能及的好事！                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">浙江省</i>
+                    <i class="if icon-tag">移动互联网</i>                </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:-100%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥120万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥10000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>0%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+        <div class="pb-6 c-primary">
+        项目来源: 云部落    </div>
+    <div class="poa t-0 r-0"><img src="./Public/Home/default/img/icon-shared-proj.png" alt="" width="30"></div>    <a href="/project/detail/id/GQ14561095740079978.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#ed7258">预热中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2016-03-22_56f0fdfc2b9ed.png" alt="自媒体部落-自媒体内容盈利工具，让你睡着都能赚钱！" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>自媒体部落-自媒体内容盈利工具，让你睡着都能赚钱！</h4>
+                <div class="sub-title">
+                    自媒体是一个时代的趋势，微博、微信、QQ等公众平台的出现，让获取用户随手可得，每个人都能成为一个品牌！自媒体部落，是新媒体时代前进的催化剂！轻松流量变现！高效内容编辑工具与发布空间！                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">福建省</i>
+                                    </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:-100%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥70万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥5000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>0%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+            <a href="/project/detail/id/GQ14503397240016371.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#ed7258">预热中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2016-02-23_56cbc1de73934.jpg" alt="轻轻说话-语音任务管理专家" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>轻轻说话-语音任务管理专家</h4>
+                <div class="sub-title">
+                    轻轻说话，是一款SaaS模式的企业移动办公软件，融合了PDCA循环管理体系，帮助中小企业提高任务执行力。                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">浙江省</i>
+                                    </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:-100%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥500万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥10000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>0%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+            <a href="/project/detail/id/GQ14551706080013059.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#ed7258">预热中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2016-03-09_56dfcdfc2c49e.jpg" alt="超级停车" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>超级停车</h4>
+                <div class="sub-title">
+                    我们专注于成为停车管理专家，通过输出无人化管理到B端，输出智能停车体验到C端，目标两年内，在杭州市区核心区域，管理车位总数达到5万个。                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">浙江省</i>
+                                    </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:-100%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥300万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥10000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>0%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+            <a href="/project/detail/id/GQ14562816880011607.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#ed7258">预热中</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2016-02-27_56d161b8a8c22.jpg" alt="悠行天下" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>悠行天下</h4>
+                <div class="sub-title">
+                    悠行天下（全称杭州悠行酒店投资管理有限公司）是一家专注致力于打造高端滇藏川藏整体民宿酒店投资管理交易平台和产业链，形成自己的连锁品牌，再折射户外，驴友，马场，高端会所，高尔夫球场的投资管理公司                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">浙江省</i>
+                    <i class="if icon-tag">服务业</i>                </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:-100%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥100万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥5000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>0%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li><li class="proj-item por">
+            <a href="/project/detail/id/GQ14500584720015828.html">
+        <div class="flex">
+            <div class="img-box">
+                <div class="pin pin-stage">
+                    <u style="background-color:#44bcbc">融资成功</u>                </div>
+                <img src="http://7xjckn.com2.z0.glb.qiniucdn.com/2015-12-15_566f74f4c102b.png" alt="乐盒盒科技" onerror="imgErr(this)">
+            </div>
+            <div class="summary flex-1">
+                <h4>乐盒盒科技</h4>
+                <div class="sub-title">
+                    致力打造一个最具性价比的“广告零距离”桌媒平台，整合资源，提高广告到达效果，通过目标人群订餐渠道，把广告准确送到白领手上，利用吃饭的黄金时间，广告独占性进入白领视线，实现广告线下引流到线上的新媒体渠道                </div>
+                                <div class="tags-box fz-small">
+                    <i class="if icon-map-marker">广东省</i>
+                                    </div>
+            </div>
+
+        </div>
+    </a>
+        <div class="progress">
+        <div class="track">
+            <div class="train" style="left:0%"></div>
+        </div>
+    </div>
+    <div class="flex fund-info">
+        <div>
+            <strong>¥75万</strong>
+            <small>目标额</small>
+        </div>
+        <div>
+            <strong>¥8000元</strong>
+            <small>起投额</small>
+        </div>
+        <div>
+            <strong>137%</strong>
+            <small>已完成</small>
+        </div>
+    </div>
+        
+</li>    </ul>
+    <div class="infinite-loading mt-8" data-list-wrap=".proj-list" data-total-page="12">
+        <form action="/list/index.html" data-ajax-method="get">
+            <input type="hidden" name="type" value="">
+            <input type="hidden" name="industry" value="">
+            <input type="hidden" name="city" value="">
+            <input type="hidden" name="offset" value="2">
+            <input type="hidden" name="keyword" value="">
+        </form>
+        <div class="tac loading">
+            <u class="loading-text">正在加载中...</u>
+            <u class="end-text">加载完成</u>
+        </div>
+    </div>
+
+    <div class="s-footer s-footer-index flex space-around aic c-9">
+    <div class="">
+        <a class="full" href="/"><i class="if icon-home m-0"></i><p>首页</p></a>
+    </div>
+    <div class="active">
+        <a class="full" href="/list/index.html"><i class="if icon-square-4 if-p-1 m-0"></i>
+        <p>项目</p></a>
+    </div>
+    <div class="">
+        <a class="full" href="/info/index.html"><i class="if icon-newspaper m-0"></i>
+        <p>资讯</p></a>
+    </div>
+    <div class="">
+        <a class="full" href="/my/index.html"><i class="if icon-user-round-o if-p-2 fz-15 m-0"></i>
+        <p>我的</p></a>
+    </div>
+</div>
+</div>
+
+
+<script src="./Public/static/js/jquery-2.1.4.min.js"></script>
+
+<script src="./Public/static/js/sso.js"></script>
+
+<script src="./Public/static/js/fastclick.min.js"></script>
+<script src="./Public/Home/default/js/base.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body)
+    })
+    !function () {
+        // redirect
+        dm.qs = function (e, n, l, o, r) {
+            for (n = e.split("&"), l = {}, r = 0, o = n.length; o > r; r++) {
+                var s = n[r], t = s.indexOf("=");
+                -1 !== t ? l[s.slice(0, t)] = decodeURIComponent(s.substr(t + 1)) : l[s] = null
+            }
+            return l
+        }(location.search.slice(1))
+
+        dm.addParam = function (url, key, value) {
+            if (value == null) return url
+            if (!!~url.indexOf('?')) url += '&'
+            else url += '?'
+            url += key + '=' + value
+            return url
+        }
+        dm.removeParam = function (url, key) {
+            if (typeof key === 'string') key = [key]
+            for (var i = 0, len = key.length; i < len; i++) {
+                url = url.replace(new RegExp(key[i] + '=[\&]*&*'), '')
+            }
+            return url
+        }
+    }()
+    $(document).on('click', '.go-center', function () {
+        var $this = $(this)
+        var href = $this.attr('href')
+        if (!~href.indexOf('redirect_url')) {
+            href = dm.addParam(href, 'redirect_url', encodeURIComponent(location.href))
+            href = dm.removeParam(href, ['ticket', 'refresh'])
+            $this.attr('href', href)
+        }
+    })
+</script>
+
+
+<script src="./Public/static/js/swipe.js"></script>
+<script src="./Public/static/js/template.js"></script>
+
+<script src="./Public/static/js/dm.bubble.js"></script>
+<script src="./Public/static/js/dm.validate.js"></script>
+
+<script src="./Public/static/js/countup.min.js"></script>
+<script src="./Public/static/js/dm.scroll.js"></script>
+
+<script src="./Public/static/js/dm.ajaxpost.js"></script>
+
+
+<script src="./Public/Home/mobile/js/dm.common.js"></script>
+<script src="./Public/Home/mobile/js/list.js"></script>
+
+</body>
+</html>

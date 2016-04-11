@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>seed UI</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="seed.css">
+    <script src="seed.js"></script>
+    <style>
+    body {
+      /*background:#f5f5f5;*/
+    }
+    section {
+      padding: 10px;
+      margin-top: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+
+
+   
+
+    </style>
+    
+  </head>
+  <body class="">
+    <div class="w640111">
+      <section class="">
+        <h2 class="titleSpace01 h2">button</h2>
+        <div class="">
+          <button class="qui-btn small">qui-btn small</button>
+          <button class="qui-btn fluid">qui-btn fluid</button>
+          <button class="qui-btn btnA">qui-btn btnA</button>
+          <button class="qui-btn btnB">qui-btn btnB</button>
+          <button class="qui-btn btnC">qui-btn btnC</button>
+          <button class="qui-btn btnWeak">qui-btn btnWeak</button>
+          <button class="qui-btn btnDisabled">qui-btn btnDisabled</button>
+          <button class="qui-btn btnTag">qui-btn btnTag</button>
+        </div>
+      </section>
+
+   
+      <section>
+        <h1 class="">微信UI</h1>
+        <form action="" method="post" id="registerForm1" >
+            <input type="hidden" name="p1" value="ajax参数1">
+            <input type="hidden" name="p2" value="ajax参数2">
+            <input type="text" name="" value="" data-validate="require">
+            <input type="text" name="" value="" data-validate="require">
+            <div class="qui-cell-list">
+                <div class="qui-cell-item">
+                    <label class="qui-cell-label">姓名:</label>
+                    <div class="qui-cell-control">
+                      <input type="text" class="qui-cell-input" placeholder="请输入真实姓名"  name="name" data-validate="require" > 
+                    </div>
+                    <div class="qui-cell-clear">
+                        <i class="qui-icon-clear" style="visibility: ;"></i>
+                    </div>
+                </div>
+                <div class="qui-cell-item">
+                    <label class="qui-cell-label">身份证号:</label>
+                    <div class="qui-cell-control">
+                      <input type="text" class="qui-cell-input" placeholder="请输入身份证号"  name="idCardNo" data-validate="require,idcard"> 
+                    </div>
+                </div>
+                <div class="qui-cell-item vcode">
+                    <label class="qui-cell-label">验证码:</label>
+                    <div class="qui-cell-control u-verify-content">
+                      <input type="tel" class="qui-cell-input" placeholder="点击图片可刷新"  name="imageVerifyCode" data-validate="require,vcode" data-messages='{"require":"请输入验证码"}'> 
+                    </div>
+                    <div class="qui-cell-vcode ">
+                        <div class="qui-verify-code" style="background-image:url(data:image/PNG;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAeCAYAAABwmH1PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHHSURBVFhH7ZU7csIwEIZTpUrPHdKkSemSTA7ATCpq13Q+gTsKrkDBDHeA4RI+kGLr5ZX0rySbycQYF18Beqy+3ZX80jSNeCYW4bmzCM+dRXjuBMKr9++Qj6JncxAXbw3mJupNIdb7GxiLcD2ItYxViSMad1Ax6PlS8fgKm8C7M04CAa2/7LdZB3A5i9IePiF8qkbsHxE+7pigOhE0EEoCxVnPoqvVdlDNxbaoxAzunpaE8FbUV28MCEPIPJQESjefJphNtkZ1T6IDGNIt3VKe+v9Th7HkJqYFJYHizjedUInSu7+wQB68sCR8FLo7jec24u3nUyJ/D+yEWFL9BHTtXHy9Wtx1celkhe2BScW5l3q4sH6kvCT6wlTOgBOP96Mwwv0DEojp1zG2qSRDWN5FLwaSo2usFEx65NwaRjiWqVhAQoYwknOuD4xjrhl6R/6iwhmbSogwEuuA61rUK8zfRfONp/dekpFk/g7D1jXZ5Q8zRIwjJYzPkdd5vLBEb0IhGyI59eAg8r+baWGFqbQhqDggIdyD5NC8qRMVfnQ5RHaF78H5Pv8zi/DcyRaeUpXuYbTwoyZgVEsb2acTRmNTZ3m05k0jfgHQK6GnZ5M13wAAAABJRU5ErkJggg==)"></div>
+                    </div>
+
+                </div>
+                <div class="qui-cell-item">
+                    <label class="qui-cell-label">登录名:</label>
+                    <div class="qui-cell-control">
+                      <input type="text" class="qui-cell-input" placeholder="6-16位,支持数字、字母和_、－、／"  name="ipcrsName" data-validate="require,username"> 
+                    </div>
+                </div>
+                <div class="qui-cell-item">
+                    <label class="qui-cell-label">密码:</label>
+                    <div class="qui-cell-control">
+                      <input type="password" class="qui-cell-input " placeholder="6-20位,必须包含数字和字母" name="ipcrsPwd" data-validate="require,password" data-messages='{"require":"请输入密码","password":"密码格式不对哟"}'> 
+                    </div>
+                </div>
+                <div class="qui-cell-item">
+                    <label class="qui-cell-label">手机号:</label>
+                    <div class="qui-cell-control">
+                      <input type="tel" class="qui-cell-input " placeholder="11位手机号"  name="phoneNo" data-validate="require,cellphone"> 
+                    </div>
+                    
+                </div> 
+                <div class="qui-cell-item vcode">
+                    <label class="qui-cell-label">动态码:</label>
+                    <div class="qui-cell-control">
+                      <input type="tel" class="qui-cell-input" placeholder="" name="smsVerifyCode" data-validate="require"> 
+                    </div>
+                    <div class="qui-cell-vcode">
+                        <button type="button" class="qui-btn btnOpacity " id="btnMessage">发送</button>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="qui-form-error">
+                <div class="qui-form-error-main"><p>我是整个表单的错误信息</p><p>我是整个表单的错误信息</p></div>
+            </div>
+            <div class="form-action">
+                <button type="button" class="qui-btn fluid btnB  u-submit-button1" >提交</button>
+            </div>
+        </form>
+
+
+        <script>
+          (function(){
+            var validate = function(){
+                $('#registerForm1').on('input',function(){
+                      //console.log(11)
+                  })
+                .on('click', '.u-submit-button1', function(){
+                  //  开始验证
+                  var errors = Validator.validate($('#registerForm1'));
+
+                  if(errors.length) {
+                      $('.qui-form-error-main').html(errors.join('<br>'));
+                  }else {
+                      $('.qui-form-error-main').html('');
+                  }
+
+                })
+                .on('click', '.u-login-verify-code', function(e){
+                  alert(2)
+                })
+                .on('click', '#btnMessage', function(e){
+                 
+                  var $target = $('#btnMessage');
+                  var oriStr = $target.html();
+                  
+                  var countTimer = null;
+                  var all = 60;// 60s
+                  var count = function(){
+                      
+                      var run = function(){
+                          
+                          all--;
+                          $target.html(all+'s后可重发');
+                          if(all==0){
+                              clearInterval(countTimer);
+                              setTimeout(function(){
+                                  $target.html(oriStr);
+                                  $target.removeAttr('disabled');
+                              },1000);
+                          }
+
+                          
+                      };
+                      countTimer = setInterval(run,1000);
+
+                  };
+                  count();
+                  
+
+                });
+            };
+
+            validate();
+
+          })();
+
+        </script>
+      </section>
+
+      <section>
+        <div class="form-wrapper w640">
+            <form action="./assets/data/result.txt" method="post" id="form1" class="form-horizontal">
+                <div class="form-group">
+                    <label for="">姓名:</label>
+                    <div class="form-group-field">
+                      <input type="text" class="qui-input" placeholder="请输入姓名" id="iName" name="a" > 
+                      <label  class="error show">请输入姓名</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">所在地:</label>
+                    <div class="form-group-field">
+                      <input type="text" class="qui-input" placeholder="请输入所在地" id="iLocation" name="aa">  
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">手机号:</label>
+                    <div class="form-group-field">
+                      <input type="tel" class="qui-input" placeholder="请输入手机号" id="iPhone" name="aaa">  
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">国家:</label>
+                    <div class="form-group-field custom-select">
+                      <select name="s1" id="s2" class="qui-input ">
+                        <option value="">中国</option>
+                        <option value="">美国</option>
+                        <option value="">英国</option>
+                        <option value="">日本</option>
+                        <option value="">韩国</option>
+
+                      </select>
+                      
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">喜欢:</label>
+                    <div class="form-group-field ">
+                      <ul class="choice-list">
+                        <li>
+                          <label class="checkbox-group">
+                            <input type="checkbox" name="cc1" checked id="cc1" class="checkbox">
+                            <label for=""></label>
+                            <span>电影</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-group">
+                            <input type="checkbox" name="cc2"  id="cc2" class="checkbox">
+                            <label for="cc2"></label>
+                            <span>音乐</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="ccheckbox-group">
+                            <input type="checkbox" name="cc3"  id="cc3" class="checkbox">
+                            <label for="cc3"></label>
+                            <span>小说</span>
+                          </label>
+                        </li>
+                      </ul>
+                      
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">性别:</label>
+                    <div class="form-group-field ">
+                      <ul class="choice-list">
+                        <li>
+                          <label class="radio-group">
+                            <input type="radio" name="sex1"  id="rr1" class="regular-radio">
+                            <label for="rr1"></label>
+                            <span>男</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="radio-group">
+                            <input type="radio" name="sex1"  id="rr2" class="regular-radio">
+                            <label for="rr2"></label>
+                            <span>女</span>
+                          </label>
+                        </li>
+                       
+                      </ul>
+                      
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">性别2:</label>
+                    <div class="form-group-field ">
+                      <ul class="choice-list">
+                        <li>
+                          <label class="radio-group">
+                            <input type="radio" name="sex2"  id="rrr1" class="radio">
+                            <label for="rrr1"></label>
+                            <span>男</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="radio-group">
+                            <input type="radio" name="sex2"  id="rrr2" class="radio">
+                            <label for="rrr2"></label>
+                            <span>女</span>
+                          </label>
+                        </li>
+                       
+                      </ul>
+                      
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">备注:</label>
+                    <div class="form-group-field">
+                      <textarea name="" class="qui-textarea" placeholder="请输入"></textarea>
+                    </div>
+                </div>
+                <div class="form-action tc">
+                    <button type="submit" class="qui-btn btnA">
+                        确认提交
+                    </button>
+                </div>
+                
+
+            </form>
+        </div>
+
+      </section>
+
+      <section>
+        <table class="table table-striped table-hover" id="tbl">
+           <thead>
+            <tr><th>index</th><th>uuid</th><th>prize</th><th>data</th><th>auth</th></tr>
+           
+           </thead>
+           <tbody> 
+                <tr class="done green">
+                 <td>1</td>
+                 <td>343A581B-6277-4CA0-9269-0BCC56598451</td>
+                 <td>充电宝</td>
+                 <td>{&quot;id&quot;:&quot;8&quot;,&quot;type&quot;:&quot;9&quot;,&quot;name&quot;:&quot;充电宝&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>a288e36e2a5c721baff632a24c188918</td>
+                </tr>
+                <tr class="done">
+                 <td>2</td>
+                 <td>9DFBD93C-A2AF-4E3D-BD6D-186465F92023</td>
+                 <td>iPhone6/6S Plus手机壳</td>
+                 <td>{&quot;id&quot;:&quot;5&quot;,&quot;type&quot;:&quot;6&quot;,&quot;name&quot;:&quot;iPhone6/6S Plus手机壳&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>9f2dedf4ee6ac36c51c9cd751fa7d50c</td>
+                </tr>
+                <tr class="done yellow">
+                 <td>3</td>
+                 <td>3D8F24AC-0F36-4BC1-A65C-638F7DE0CD8F</td>
+                 <td>24小时T恤</td>
+                 <td>{&quot;id&quot;:&quot;6&quot;,&quot;type&quot;:&quot;7&quot;,&quot;name&quot;:&quot;24小时T恤&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>c9bdb865e8504c33e0040f968dcbf41d</td>
+                </tr>
+                <tr class="blue">
+                 <td>4</td>
+                 <td>11FAE9BA-E666-474E-9119-A70BC986FF6F</td>
+                 <td>点到按摩券</td>
+                 <td>{&quot;id&quot;:&quot;3&quot;,&quot;type&quot;:&quot;4&quot;,&quot;name&quot;:&quot;点到按摩券&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>6ef6ab311dbf510966feccf0942ec3a3</td>
+                </tr>
+                <tr>
+                 <td>5</td>
+                 <td>FB5BA373-2A19-4EC0-A699-D20248BAD14A</td>
+                 <td>iPhone6/6S Plus手机壳</td>
+                 <td>{&quot;id&quot;:&quot;5&quot;,&quot;type&quot;:&quot;6&quot;,&quot;name&quot;:&quot;iPhone6/6S Plus手机壳&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>361a078e5c730886bf56f89fc2533606</td>
+                </tr>
+                <tr>
+                 <td>6</td>
+                 <td>F572CC8A-BE74-404A-91C5-790505A373EC</td>
+                 <td>iPhone6/6S Plus手机壳</td>
+                 <td>{&quot;id&quot;:&quot;5&quot;,&quot;type&quot;:&quot;6&quot;,&quot;name&quot;:&quot;iPhone6/6S Plus手机壳&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>320117de36b63c13b9b43ff42c03b84f</td>
+                </tr>
+                <tr class="yellow">
+                 <td>7</td>
+                 <td>A6D7389F-CDC8-4218-A7C9-88456315DA02</td>
+                 <td>24小时T恤</td>
+                 <td>{&quot;id&quot;:&quot;6&quot;,&quot;type&quot;:&quot;7&quot;,&quot;name&quot;:&quot;24小时T恤&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>4ecf73981ac3fb0bc1dd3ef2535bd517</td>
+                </tr>
+                <tr>
+                 <td>8</td>
+                 <td>30270BA3-0198-4DFE-89A8-3D563F300BEA</td>
+                 <td>iPhone6/6S Plus手机壳</td>
+                 <td>{&quot;id&quot;:&quot;5&quot;,&quot;type&quot;:&quot;6&quot;,&quot;name&quot;:&quot;iPhone6/6S Plus手机壳&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>4748da65595576371d24f193e96345ce</td>
+                </tr>
+                <tr>
+                 <td>9</td>
+                 <td>3B815626-E557-4486-B31C-F7B83F9C1D26</td>
+                 <td>素剪上门剪发券</td>
+                 <td>{&quot;id&quot;:&quot;4&quot;,&quot;type&quot;:&quot;5&quot;,&quot;name&quot;:&quot;素剪上门剪发券&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>fbde2f6dfd34d3fc6e55ebd6fc8b7c15</td>
+                </tr>
+                <tr>
+                 <td>10</td>
+                 <td>F73B5DB0-95E9-44F6-8DB8-C91AA2A426AA</td>
+                 <td>射箭券箭票</td>
+                 <td>{&quot;id&quot;:&quot;1&quot;,&quot;type&quot;:&quot;2&quot;,&quot;name&quot;:&quot;射箭券箭票&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>7902eb7d5da58b3ee2e484c17977e7d8</td>
+                </tr>
+                <tr>
+                 <td>11</td>
+                 <td>6632AA2B-03DA-48EB-A572-8CE86E5C277B</td>
+                 <td>射箭券箭票</td>
+                 <td>{&quot;id&quot;:&quot;1&quot;,&quot;type&quot;:&quot;2&quot;,&quot;name&quot;:&quot;射箭券箭票&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>a03db90a6f3cf6ee70babeade7eea9e8</td>
+                </tr>
+                <tr>
+                 <td>12</td>
+                 <td>E6D9BF1D-EF2E-408D-97FA-D31FA09CE403</td>
+                 <td>素剪上门剪发券</td>
+                 <td>{&quot;id&quot;:&quot;4&quot;,&quot;type&quot;:&quot;5&quot;,&quot;name&quot;:&quot;素剪上门剪发券&quot;,&quot;score&quot;:&quot;0&quot;}</td>
+                 <td>d08de4340774c82b55427fbf5e922f7e</td>
+                </tr>
+               </tbody> 
+        </table>
+
+      </section>
+
+    </div>
+    
+
+    
+   
+    <script>
+      console.log(123)
+      
+
+    </script>
+  </body>
+</html>
